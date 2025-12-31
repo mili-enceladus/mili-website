@@ -45,7 +45,7 @@
   if (!form) return;
 
   // Your deployed Apps Script Web App URL:
-  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7v1dckxOLMEQIsRw0_YPUODrl6LM38gqx5KXw3Uhmeff1hp915G60ShGElNzD-U0l/exec';
+  const APPS_SCRIPT_URL = '';
 
   const statusEl = document.getElementById('contact-status');
   const submitBtn = form.querySelector('.submit-btn');
