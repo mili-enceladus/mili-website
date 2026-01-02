@@ -68,7 +68,7 @@ body {
     font-size: var(--font-size-base);
     line-height: 1.6;
     color: var(--text-dark);
-    background-color: var(--bg-light);
+    background: linear-gradient(rgba(238, 244, 241, 0.9), rgba(238, 244, 241, 0.9)), url('assets/background.jpg') center/cover fixed no-repeat;
 }
 
 /* ===================================
