@@ -28,10 +28,11 @@
     --primary-dark: #24543c;
     --accent-color: #3182ce;
     --text-dark: #1a202c;
-    --text-medium: #4a5568;
+    /* --text-medium: #4a5568; */
     --text-light: #718096;
-    --bg-light: #eef4f1;
-    --bg-white: #ffffff;
+    --text-light: #4a5568;
+    --bg-light: rgba(238,244,241,0.85);
+    --bg-white: rgba(255,255,255,0.85);
     --border-color: #d1fae5;
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -68,7 +69,7 @@ body {
     font-size: var(--font-size-base);
     line-height: 1.6;
     color: var(--text-dark);
-    background: linear-gradient(rgba(238, 244, 241, 0.9), rgba(238, 244, 241, 0.9)), url('assets/background.jpg') center/cover fixed no-repeat;
+    background: linear-gradient(rgba(238, 244, 241, 0.0), rgba(238, 244, 241, 0.0)), url('assets/background.jpg') center/cover fixed no-repeat;
 }
 
 /* ===================================
@@ -134,8 +135,8 @@ body {
 }
 
 .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto var(--spacing-md);
     border-radius: 50%;
     overflow: hidden;
