@@ -1,12 +1,12 @@
 // Simple SPA navigation + mobile sidebar toggle
 (function () {
   const links = Array.from(document.querySelectorAll('.nav-link'));
-  const sections = Array.from(document.querySelectorAll('.content-section'));
+  const sections = Array.from(document.querySelectorAll('.content-section, .hero-intro'));
   const sidebar = document.querySelector('.sidebar');
   const toggleBtn = document.querySelector('.mobile-menu-toggle');
 
   function showSection(hash) {
-    const id = (hash || '#about').replace('#', '');
+    const id = (hash || '#intro').replace('#', '');
     sections.forEach(sec => sec.classList.toggle('active', sec.id === id));
     links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
     if (window.matchMedia('(max-width: 768px)').matches) {
