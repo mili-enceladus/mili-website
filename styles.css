@@ -454,6 +454,14 @@ body {
    RESEARCH SECTION
    =================================== */
 
+.section-content a,
+.section-content a:visited,
+.section-content a:hover,
+.section-content a:active,
+.section-content a:focus {
+  color: var(--accent-color);
+}
+
 .research-projects {
     display: grid;
     gap: var(--spacing-lg);
@@ -514,6 +522,7 @@ body {
   margin-top: 0.75rem;
   padding-top: 0.75rem;
   border-top: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.12);
   font-size: 0.92rem;
   line-height: 1.35;
 }
@@ -530,6 +539,7 @@ body {
   border-radius: 8px;
   text-decoration: none;
   font-size: 0.9rem;
+  margin-bottom: 12px;
 }
 
 .btn-link:hover {
@@ -542,6 +552,7 @@ body {
   max-width: 480px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  
   display: block;
 }
 
@@ -550,6 +561,43 @@ body {
   font-size: 0.9rem;
   color: #555;
   line-height: 1.35;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  margin-bottom: 12px;
+}
+
+.project-photo-2 img {
+  margin-top: .25rem;
+  width: 100%;
+  height: 50%;
+  max-width: 480px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  display: block;
+}
+
+.project-photo-2 figcaption {
+  margin-top: 0.4rem;
+  margin-bottom: 1.0rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.35;
+}
+
+.project-links {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.project-links-text {
+  margin: 0 0 8px 0;
+}
+
+.project-link {
+  display: inline-block;
+  text-decoration: underline;
+  margin-bottom: 12px;
 }
 
 
@@ -607,6 +655,7 @@ body {
     border-radius: 8px;
     border-left: 4px solid var(--primary-color);
     transition: all 0.3s ease;
+    margin-top: 10px;
 }
 
 .publication-item:hover {
